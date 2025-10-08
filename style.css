@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@media (prefers-color-scheme: dark)
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: black;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.profile-container {
+  background-color: #000000;
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.profile-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #fffefe;}
+.profile-container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  color: #fffefe;
+}
+.profile-container h3 {
+  color: #fff;
+}
+.profile-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #404042;
+  box-shadow: 0 2px 8px rgba(5, 5, 5, 0.1);
+  margin-bottom: 1rem;
+}
+.profile-container p {
+  margin-bottom: 1rem;
+  color: #fffefe;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.profile-container a {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* 8. Cores específicas por link */
+.profile-container a[href*="instagram.com"] {
+  background-color: #0a0a0a;
+}
+
+.profile-container a[href*="instagram.com"]:hover {
+  background-color: #C91F62;
+}
+
+.profile-container a[href*="linkedin.com"] {
+  background-color: #080808;
+}
+
+.profile-container a[href*="linkedin.com"]:hover {
+  background-color: #084B8A;
+}
+
+.profile-container a[href*="drive"]:hover {
+  background-color: #ac9036;
+}
+
+/* 9. Responsividade */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  .profile-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .profile-container img {
+    width: 120px;
+    height: 120px;
+  }
+}
