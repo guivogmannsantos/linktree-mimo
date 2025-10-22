@@ -64,7 +64,10 @@ body {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d73bf5bf8552adb9f0c8bdc21fc7fd51c20d7b3e
 .profile-container a[href*="instagram.com"] {
   background-color: #0a0a0a;
 }
