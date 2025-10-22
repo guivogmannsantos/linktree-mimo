@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@media (prefers-color-scheme: dark)
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@media (prefers-color-scheme: dark) {
+  body, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -64,7 +65,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* 8. Cores específicas por link */
 .profile-container a[href*="instagram.com"] {
   background-color: #0a0a0a;
 }
@@ -84,8 +84,6 @@ body {
 .profile-container a[href*="drive"]:hover {
   background-color: #ac9036;
 }
-
-/* 9. Responsividade */
 @media (max-width: 480px) {
   .profile-container {
     padding: 1.5rem;
